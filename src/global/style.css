@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    @font-face {
+        font-family: 'Outfit';
+        src: url('/public/fonts/Outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Instrument-Serif';
+        src: url('/public/fonts/Instrument_Serif/InstrumentSerif-Regular.ttf') format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'Space-Mono';
+        src: url('/public/fonts/Space_Mono/SpaceMono-Regular.ttf') format('truetype');
+    }
+
+    body {
+        font-family: 'Outfit';
+        font-weight: 300;
+    }
+
+    h1,
+    h2 {
+        font-family: 'Instrument-Serif';
+    }
+
+    .social a {
+        font-family: 'Space-Mono';
+        font-weight: 500;
+    }
+
+    .folder {
+        transition: all 250ms ease-in-out;
+    }
+
+    .folder-container:hover {
+        .folder {
+            background-color: #fca311;
+            transform: translateY(-10px);
+        }
+    }
+
+    ion-icon {
+        font-size: 5.5rem;
+        position: relative;
+        z-index: 100;
+        color: #212529;
+    }
+    
+    a {
+        transition: transform 280ms ease-in-out;
+    }
+    
+    a:hover {
+        ion-icon {
+            transform: scale(1.1);
+        }
+    }
+
+}

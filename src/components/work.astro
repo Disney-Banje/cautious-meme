@@ -1,0 +1,28 @@
+---
+import Card from "./card.astro"
+---
+
+<section class="mt-10">
+    <h1 class="text-5xl font-light mb-9">
+        My Journey
+    </h1>
+    <div class="grid grid-cols-1 gap-5 sm:grid-cols-3">
+        <Card 
+        title="Coding"
+        iconName="code-slash-outline"
+        desc="This is a collection of articles, and projects for my coding journey"
+        link="src/pages/gallery.astro"/>
+        <Card
+        title="Gallery"
+        iconName="camera-outline" 
+        desc="Libary of my photographic projects"
+        link="gallery"
+        />
+        <Card
+        title="The Factory"
+        iconName="build-outline" 
+        desc="The workshop where I test ideas, and projects to bring to the world."
+        link="src/pages/gallery.astro"
+        />
+    </div>
+</section>

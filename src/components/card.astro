@@ -1,0 +1,18 @@
+---
+const { title, iconName, desc, link } = Astro.props;
+---
+
+<article class="h-fit">
+    <a href={link} class="folder-container h-60 mb-6 flex-grow flex justify-center items-center relative m-2 before:absolute before:rounded-lg before:w-full before:h-full before:border-2 before:inset-2 before:z-30 after:absolute after:-left-2 after:-top-2 after:rounded-lg after:-z-10 after:w-full after:h-full after:border-2 rounded-lg">
+        <!-- <div class="absolute w-[96.5%] h-[95.5%] bg-slate-50 rounded-lg hover:bg-green-400"></div> -->
+         <div class="folder flex justify-center items-center absolute rounded-lg bg-slate-50 w-full h-full">
+            <ion-icon name={iconName}></ion-icon>
+         </div>
+    </a>
+    <section class="mt-4">
+        <h2 class="mb-2 text-3xl text-[#adb5bd]">
+            {title}
+        </h2>
+        <p>{desc}</p>
+    </section>
+</article>
